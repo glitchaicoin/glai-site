@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home() {
+export default function GLAILanding() {
   return (
     <div className="min-h-screen bg-black text-white font-mono px-6 py-16">
       {/* Hero Section */}
@@ -15,11 +15,11 @@ export default function Home() {
 
       {/* Token Stats */}
       <div className="grid md:grid-cols-3 gap-6 text-sm md:text-base max-w-4xl mx-auto">
-        <div className="bg-white text-black p-5 rounded-lg shadow">🔥 <strong>200B GLAI Burned</strong><br/>30% of total supply destroyed</div>
-        <div className="bg-white text-black p-5 rounded-lg shadow">🔐 <strong>Ownership Renounced</strong><br/>No admin control, forever</div>
-        <div className="bg-white text-black p-5 rounded-lg shadow">🔒 <strong>99% LP Locked</strong><br/>Via UNCX until May 2026</div>
-        <div className="bg-white text-black p-5 rounded-lg shadow">⚖️ <strong>Fixed Tax</strong><br/>2% Buy / 1.9% Sell — cannot be changed</div>
-        <div className="bg-white text-black p-5 rounded-lg shadow">🛡️ <strong>Anti-Whale & Whitelist Logic</strong><br/>Permanently disabled by renounce</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔥 <strong>200B GLAI Burned</strong><br />30% of total supply destroyed</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔐 <strong>Ownership Renounced</strong><br />No admin control, forever</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔒 <strong>99% LP Locked</strong><br />Via UNCX until May 2026</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">⚖️ <strong>Fixed Tax</strong><br />2% Buy / 1.9% Sell — cannot be changed</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🛡️ <strong>Anti-Whale & Whitelist Logic</strong><br />Permanently disabled by renounce</div>
         <div className="bg-white text-black p-5 rounded-lg shadow">💬 <strong>Telegram:</strong> <a href="https://t.me/GLAIofficial" className="underline">@GLAIofficial</a></div>
       </div>
 
@@ -57,4 +57,3 @@ export default function Home() {
     </div>
   );
 }
-Update landing page with glitch layout and full token info

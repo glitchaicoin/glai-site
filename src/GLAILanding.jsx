@@ -57,4 +57,4 @@ export default function GLAILanding() {
     </div>
   );
 }
-Deploy glitch landing
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import GLAILanding from './components/GLAILanding'; // ✅ make sure path matches
+import GLAILanding from './GLAILanding'; // ✅ This is correct
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

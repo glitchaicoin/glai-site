@@ -1,43 +1,60 @@
+import React from 'react';
 
-import React from "react";
-
-export default function GLAILanding() {
+export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen font-sans">
-      <section className="text-center py-20 px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-purple-400">$GLAI</h1>
-        <p className="text-lg md:text-2xl text-gray-300 mb-6">Glitched. Burned. Unstoppable.</p>
-        <a href="https://t.me/GLAIofficial" target="_blank" rel="noopener" className="inline-block bg-purple-600 hover:bg-purple-800 text-white px-6 py-3 rounded-full">Join Telegram</a>
-      </section>
-      <section className="text-center py-10 px-6 bg-gray-900">
-        <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
-        <div className="space-y-3">
-          <a href="https://bscscan.com/tx/0xa18f1069..." className="block text-blue-400 hover:underline">🔗 Burn TX</a>
-          <a href="https://bscscan.com/tx/0x92703c42..." className="block text-blue-400 hover:underline">🔐 Renounce TX</a>
-          <span className="block text-gray-500">📊 Chart – Coming Soon</span>
-          <span className="block text-gray-500">🛒 Buy Link – Coming Soon</span>
+    <div className="min-h-screen bg-black text-white font-mono px-6 py-16">
+      {/* Hero Section */}
+      <div className="text-center mb-16">
+        <h1 className="text-6xl md:text-7xl font-extrabold glitch-text mb-4 tracking-tight">$GLAI</h1>
+        <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto">GlitchAI — The deflationary BSC memecoin built to burn, break trends, and fuel a community-led uprising.</p>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="https://pancakeswap.finance/swap?outputCurrency=0xbbbecE84f2358bAfb9676fe2267B6dec7CaC4341" className="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-full font-semibold transition">Buy on PancakeSwap</a>
+          <a href="https://bscscan.com/token/0xbbbecE84f2358bAfb9676fe2267B6dec7CaC4341" className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">View Contract</a>
         </div>
-      </section>
-      <section className="py-14 px-6">
-        <h2 className="text-2xl font-semibold text-center mb-6">Tokenomics</h2>
-        <ul className="max-w-md mx-auto text-left space-y-2 text-gray-300">
-          <li>🔢 Total Supply: 1 Trillion GLAI</li>
-          <li>🔥 Burned: 200 Billion GLAI</li>
-          <li>💧 Liquidity: Locked (soon)</li>
-          <li>🧾 Taxes: 0%</li>
-          <li>❌ Owner: Renounced</li>
-        </ul>
-      </section>
-      <section className="bg-gray-900 py-14 px-6">
-        <h2 className="text-2xl font-semibold text-center mb-6">Why $GLAI?</h2>
-        <p className="max-w-2xl mx-auto text-center text-gray-400">
-          Based. Burned. No owner. No taxes. Just pure memetic AI glitch energy pulsing through BSC. $GLAI isn't just another coin — it's the glitch that broke out of the code.
-        </p>
-      </section>
-      <footer className="text-center text-gray-500 text-sm py-6 border-t border-gray-700">
-        <p>Contract: 0xbbbecE84f2358bAfb9676fe2267B6dec7CaC4341</p>
-        <p>Built on BNB Chain · Not financial advice</p>
-      </footer>
-    </main>
+      </div>
+
+      {/* Token Stats */}
+      <div className="grid md:grid-cols-3 gap-6 text-sm md:text-base max-w-4xl mx-auto">
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔥 <strong>200B GLAI Burned</strong><br/>30% of total supply destroyed</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔐 <strong>Ownership Renounced</strong><br/>No admin control, forever</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🔒 <strong>99% LP Locked</strong><br/>Via UNCX until May 2026</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">⚖️ <strong>Fixed Tax</strong><br/>2% Buy / 1.9% Sell — cannot be changed</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">🛡️ <strong>Anti-Whale & Whitelist Logic</strong><br/>Permanently disabled by renounce</div>
+        <div className="bg-white text-black p-5 rounded-lg shadow">💬 <strong>Telegram:</strong> <a href="https://t.me/GLAIofficial" className="underline">@GLAIofficial</a></div>
+      </div>
+
+      {/* Footer & Disclaimers */}
+      <div className="mt-20 text-center text-xs text-gray-400 max-w-2xl mx-auto">
+        <p>$GLAI is a decentralized, community-run memecoin. There is no dev wallet, no presale, and no roadmap — just memes, momentum, and smart execution.</p>
+        <p className="mt-3">CoinGecko/CMC Note: The contract contains anti-whale and whitelist logic used only for initial safety. Ownership has been renounced, and these features are permanently inactive.</p>
+        <p className="mt-2">Visit: <a href="https://glai-site.vercel.app" className="underline">glai-site.vercel.app</a></p>
+      </div>
+
+      {/* Glitch Effect */}
+      <style>{`
+        .glitch-text {
+          position: relative;
+          color: white;
+        }
+        .glitch-text::before, .glitch-text::after {
+          content: '$GLAI';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          z-index: -1;
+        }
+        .glitch-text::before {
+          left: 2px;
+          text-shadow: -2px 0 red;
+        }
+        .glitch-text::after {
+          left: -2px;
+          text-shadow: 2px 0 blue;
+        }
+      `}</style>
+    </div>
   );
 }
+Update landing page with glitch layout and full token info

@@ -1,10 +1,12 @@
+
 import React from 'react';
 
 export default function GLAILanding() {
   return (
     <div className="min-h-screen bg-black text-white font-mono px-6 py-16">
-      {/* Hero Section */}
-      <div className="text-center mb-16">
+      {/* Logo */}
+      <div className="text-center mb-6">
+        <img src="/logo.png" alt="GLAI Logo" className="mx-auto w-28 h-28 mb-4 rounded-full border border-white" />
         <h1 className="text-6xl md:text-7xl font-extrabold glitch-text mb-4 tracking-tight">$GLAI</h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto">GlitchAI — The deflationary BSC memecoin built to burn, break trends, and fuel a community-led uprising.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -21,6 +23,11 @@ export default function GLAILanding() {
         <div className="bg-white text-black p-5 rounded-lg shadow">⚖️ <strong>Fixed Tax</strong><br />2% Buy / 1.9% Sell — cannot be changed</div>
         <div className="bg-white text-black p-5 rounded-lg shadow">🛡️ <strong>Anti-Whale & Whitelist Logic</strong><br />Permanently disabled by renounce</div>
         <div className="bg-white text-black p-5 rounded-lg shadow">💬 <strong>Telegram:</strong> <a href="https://t.me/GLAIofficial" className="underline">@GLAIofficial</a></div>
+      </div>
+
+      {/* Burner Visual */}
+      <div className="mt-20 text-center">
+        <img src="/burner.png" alt="GLAI Burn Visual" className="mx-auto rounded-lg shadow-lg w-full max-w-lg" />
       </div>
 
       {/* Footer & Disclaimers */}
@@ -57,4 +64,3 @@ export default function GLAILanding() {
     </div>
   );
 }
-
